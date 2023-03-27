@@ -8,24 +8,24 @@
         <h1>Título da Página</h1>
         <?php
         //KAUE, 
-            echo "uma frase criativa"."<br>";
+            
             $servidor = "localhost";
-            $usuario = "eumesmo";
-            $senha = "1234";
-            $nomedb = "eumesmo";
+            $usuario = "id20491942_admin";
+            $senha = "\8WrsN0-Y2bY0S=l";
+            $nomedb = "id20491942_eumesmo";
 
             $conn = new mysqli($servidor, $usuario, $senha, $nomedb);
 
-            if($conn -> connect_error) {
-                die("Conexão Falhou:".$conn -> connect_error);
+            if($conn->connect_error) {
+                die("Conexão Falhou:".$conn->connect_error);
             }
             echo "Conectado ao DB"."<br>";
 
-            $sql="SELECT Nome ,Sobrenome,Telefone from agenda";
-            $result=$conn->query ($sql);
+            $sql="SELECT Nome, Sobrenome, Telefone FROM agenda";
+            $result=$conn->query($sql);
             echo
 
-           " <table>
+           "<table>
             <thead>
                 <th>Nome</th>
                 <th>sobrenome</th>
@@ -35,18 +35,18 @@
                 
             
 
-            if($result -> num_rom>0){
-                while($rom=$result ->fetch_assor()){
+            if($result->num_row>0){
+                while($row=$result->fetch_assoc()){
                     echo 
                    "<tr>"
-                        . " <td>".rom["Nome"]."</td>"
-                        . " <td>".rom["Sobrenome"]."</td>"
-                        . " <td>".rom["Telefone"]."</td>"
+                        . " <td>".$row["Nome"]."</td>"
+                        . " <td>".$row["Sobrenome"]."</td>"
+                        . " <td>".$row["Telefone"]."</td>"
                     ."</tr>";
-                    echo
+                }
+                echo
                     "</tbody>
                      </table>";
-                }
             } else{
                 echo
                 "<tr>
