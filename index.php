@@ -35,7 +35,7 @@
                 
             
 
-            if($result->num_row>0){
+            if($result->num_rows>0){
                 while($row=$result->fetch_assoc()){
                     echo 
                    "<tr>"
