@@ -63,6 +63,45 @@
 
            
 
-        ?>
+        ?> 
+        <!-- Formulário -->
+        <form method="POST" action="">
+            <fieldset>
+                <legend>Adicionar Aluno</legend>
+                <label>
+                    Nome:
+                    <input type="text" name="name" required/>
+                </label>
+                <label>
+                    Sobrenome:
+                    <input type="text" name="uppername" required/>
+                </label>
+                <label>
+                    Telefone:
+                    <input type="text" name="phone" required/>
+                </label> <br/>
+                <input type="submit" name="add-data" value="Adicionar"/>
+            </fieldset>
+        </form>
+        
+        <!-- Adição de novas linhas ao Banco de Dados -->
+        <?php
+            $servidor = "localhost";
+            $usuario = "id20491942_admin";
+            $senha = "\8WrsN0-Y2bY0S=l";
+            $nomedb = "id20491942_eumesmo";
+            $conn = new mysqli($servidor, $usuario, $senha, $nomedb);
+
+            if(isset($_POST['add-data'])) {
+                $name = $_POST["name"];
+                $uppername = $_POST["uppername"];
+                $phone = $_POST["phone"];
+
+                $sql = "INSERT INTO alunos (Nome, Sobrenome, Telefone)
+                VALUES ('$name', '$uppername', '$phone')";
+
+                $conn->query($sql);
+                echo "<meta http-equiv='refresh'content='0'/>";
+            }
     </body>
 </html>
