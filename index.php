@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Página sem nome</title>
+        <title>sorriso solto</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <h1>Título da Página</h1>
+        <h1>2 maluco no pedaço</h1>
         <?php
-        //KAUE, 
+        //KAUE, th Fé
             
             $servidor = "localhost";
             $usuario = "id20491942_admin";
