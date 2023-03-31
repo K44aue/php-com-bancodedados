@@ -98,7 +98,7 @@
                 $uppername = $_POST["uppername"];
                 $phone = $_POST["phone"];
 
-                $sql = "INSERT INTO alunos (Nome, Sobrenome, Telefone)
+                $sql = "INSERT INTO agenda (Nome, Sobrenome, Telefone)
                 VALUES ('$name', '$uppername', '$phone')";
 
                 $conn->query($sql);
