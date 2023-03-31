@@ -11,7 +11,7 @@
             
             $servidor = "localhost";
             $usuario = "id20491942_admin";
-            $senha = "\8WrsN0-Y2bY0S=l";
+            $senha = "vgJ7Cc1Z\8Wqcve-";
             $nomedb = "id20491942_eumesmo";
 
             $conn = new mysqli($servidor, $usuario, $senha, $nomedb);
@@ -86,10 +86,11 @@
         
         <!-- Adição de novas linhas ao Banco de Dados -->
         <?php
-            $servidor = "localhost";
-            $usuario = "id20491942_admin";
-            $senha = "\8WrsN0-Y2bY0S=l";
-            $nomedb = "id20491942_eumesmo";
+             $servidor = "localhost";
+             $usuario = "id20491942_admin";
+             $senha = "vgJ7Cc1Z\8Wqcve-";
+             $nomedb = "id20491942_eumesmo";
+ 
             $conn = new mysqli($servidor, $usuario, $senha, $nomedb);
 
             if(isset($_POST['add-data'])) {
