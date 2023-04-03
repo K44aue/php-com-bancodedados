@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align:center ;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 5px 0px;
+}
+
+h4 {
+    margin: 5px 0px;
+}
+
+fieldset {
+    display: inline-block;
+    background-color: blueviolet;
+    border-color: black;
+    box-shadow: 0px 5px 10px black;
+    margin: 20px 0px;
+}
+
+fieldset legend {
+    text-align: left;
+    font-size: 26px;
+}
+
+fieldset label {
+    display: inline-block;
+}
+
+input {
+    outline: none;
+    padding: 3px;
+}
+
+input[type="submit"] {
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border:none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+table {
+    width: 600px;
+    margin: auto;
+    text-align: left;
+    box-shadow:0px 5px 10px black ;
+}
+
+table thead {
+    background-color: black;
+    color: white;
+}
+
+table th, table td {
+    padding: 3px;
+}
+
+table tbody tr:hover {
+    background-color: grey;
+}
+
+
