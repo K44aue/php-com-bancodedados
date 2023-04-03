@@ -13,7 +13,7 @@
                 include 'estilo.css';
             ?>
         </style>
-        <h1>2 maluco no pedaço</h1>
+        <h1>3 maluco no pedaço</h1>
          <!-- Formulário -->
          <form method="POST" action="">
             <fieldset>
