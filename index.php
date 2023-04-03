@@ -5,6 +5,11 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <style>
+            <?php
+                include 'estilo.css';
+            ?>
+        </style>
         <h1>2 maluco no pedaço</h1>
          <!-- Formulário -->
          <form method="POST" action="">
